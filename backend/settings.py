@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django_countries',
     
     'core'
 ]
@@ -85,9 +86,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shop',
+        'NAME': 'rawnaq',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'rasha',
         'PORT': '3306',
         'HOST': 'localhost',
     }
@@ -145,3 +146,4 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+SIGNUP_REDIRECT_URL = '/'
